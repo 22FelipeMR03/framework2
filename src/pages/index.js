@@ -1,4 +1,15 @@
+import { Container } from "react-bootstrap"
+import Footer from "./componets/footer"
+import Menu from "./componets/navbar"
+
 export default function Index() {
-  return <h1>Olá Next</h1>
+  return <>
+    <Menu/>
+    <Container>
+        <h1>Ola turma 6V</h1>
+    </Container>
+    <Footer/>
+    </>
 }
+
 
