@@ -1,5 +1,5 @@
-import Menu from "./componets/navbar";
-import Footer from "./componets/footer";
+import Menu from "./components/navbar";
+import Footer from "./components/footer";
 import {Container} from 'react-bootstrap';
 
 export default function Index() {
