@@ -1,43 +1,31 @@
+import { Accordion, Container } from 'react-bootstrap';
 import Menu from './components/navbar';
-import { Container, Accordion} from 'react-bootstrap';
 import Footer from './components/footer';
 
 export default function Lista() {
     var noticias = [
-            {
-                id: 1,
-                titulo: "Nova vacina contra gripe é aprovada",
-                conteudo: "Uma nova vacina contra a gripe foi aprovada pelas autoridades de saúde e promete ser mais eficaz contra as cepas mais comuns."
-            },
-            {
-                id: 2,
-                titulo: "Tecnologia 5G chega a mais cidades do Brasil",
-                conteudo: "O governo anunciou a expansão da cobertura 5G, com novas cidades recebendo acesso à tecnologia de internet móvel mais rápida."
-            },
-            {
-                id: 3,
-                titulo: "Estudo revela benefícios da meditação para a saúde mental",
-                conteudo: "Pesquisadores descobriram que a prática regular da meditação pode reduzir sintomas de ansiedade e depressão."
-            },
-            {
-                id: 4,
-                titulo: "Oceano Atlântico enfrenta aumento de temperatura",
-                conteudo: "Um novo relatório aponta que a temperatura do Oceano Atlântico está aumentando, trazendo preocupações sobre os efeitos nas correntes marítimas."
-            },
-            {
-                id: 5,
-                titulo: "Festival de cinema traz obras de todo o mundo",
-                conteudo: "O festival anual de cinema apresenta filmes de diversos países, promovendo a cultura e a diversidade no setor audiovisual."
-            }
-        ]
-
-    
+        {
+            id: 1,
+            titulo: "Tecnologia Revoluciona a Saúde",
+            conteudo: "Novos avanços tecnológicos estão transformando o setor de saúde, com dispositivos que permitem o monitoramento em tempo real de pacientes e diagnósticos mais precisos."
+        },
+        {
+            id: 2,
+            titulo: "Eleições de 2024 Prometem Mudanças",
+            conteudo: "As eleições de 2024 são esperadas com grande expectativa, prometendo mudanças significativas no cenário político, com novos candidatos e propostas inovadoras."
+        },
+        {
+            id: 3,
+            titulo: "Mudanças Climáticas Aceleram",
+            conteudo: "Cientistas alertam que o ritmo das mudanças climáticas está se acelerando, com consequências potencialmente devastadoras para o meio ambiente e a humanidade."
+        }
+    ]
     return (
         <>
             <Menu />
             <Container>
                 <Accordion>
-                    {noticias.map( noticia =>
+                    {noticias.map(noticia =>
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>{noticia.titulo}</Accordion.Header>
                         <Accordion.Body>
@@ -47,8 +35,7 @@ export default function Lista() {
                     )}
                 </Accordion>
             </Container>
-            <Footer/>
+            <Footer />
         </>
     );
 }
-
