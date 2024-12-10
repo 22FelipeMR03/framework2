@@ -5,6 +5,7 @@ export default function CardProd(props) {
                 <div className="card-body">
                     <h5 className="card-title">{props.titulo}</h5>
                     <p className="card-text">{props.preco}</p>
+                    
                 </div>
                 <div className="card-footer">
                     <small className="text-body-secondary">Last updated 3 mins ago</small>
