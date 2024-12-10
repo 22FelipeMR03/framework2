@@ -18,7 +18,7 @@ export default function Pesportes({produtos}) {
             <div key={produto.id}>
                   <CardProd titulo={produto.titulo}
                   descricao={produto.descricao}
-                  preco={produto.preco}/>
+                  preco={produto.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}/>
                   </div>
                 )}
           </div>
