@@ -28,7 +28,7 @@ export default function Pesportes({produtos}) {
     </>
 }
 export async function getServerSideProps() {
-    const res = await fetch('http://localhost:3000/api/produtos/data')
+    const res = await fetch('https://framework2-git-main-22felipemr03s-projects.vercel.app/api/produtos/data')
     const repo = await res.json()
     return { props: { produtos: repo } }
 }
